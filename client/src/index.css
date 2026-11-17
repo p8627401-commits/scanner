@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans;
+  }
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 1cm !important;
+    box-shadow: none !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-page table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  .print-page th, .print-page td {
+    border: 1px solid #cbd5e1 !important;
+    padding: 6px 10px !important;
+    font-size: 11pt !important;
+    color: black !important;
+  }
+
+  .print-page th {
+    background-color: #f1f5f9 !important;
+    font-weight: 600 !important;
+  }
+
+  /* Badge card printing */
+  .badge-card {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    border: 1px dashed #94a3b8 !important;
+    background: white !important;
+    color: black !important;
+  }
+}

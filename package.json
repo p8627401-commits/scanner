@@ -1,0 +1,18 @@
+{
+  "name": "smartcard-attendance-system",
+  "version": "1.0.0",
+  "description": "Full-stack web app for scanning student attendance physical card with USB hardware, separate kiosk and admin, logs, printing, exports, backup and restore.",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "server": "node server/index.js",
+    "client": "npm --prefix client run dev",
+    "build:client": "npm --prefix client run build",
+    "build": "npm --prefix client run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1"
+  }
+}
